@@ -12,27 +12,28 @@ class Registro extends React.Component {
     constructor(args) {
         super(args)
         this.state = {
-            name_user: '',
-            password_user: '',
+            name: '',
+            password: '',
             email: ''
-        }
+        };
+
+        this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(e) {
+
+        const target = e.target;
+        const value =  target.value;
+        const name = target.name
+
         this.setState({
-            name_user: e.target.value,
-            password_user: e.target.value,
-            email: e.target.value
+            [name]: value
         })
-        alert(this.state.name_user)
+
     }
 
     async add() {
-        const data = {
-            name_user: this.state,
-            password_user: this.state,
-            email: this.state
-        }
+        const data = this.state
 
         const response = await APIInvoke.invokePOST("/api/v1/user", data)
 
@@ -50,9 +51,9 @@ class Registro extends React.Component {
                 <div className=" d-flex justify-content-center align-content-center" style={{ margin: '150px 0 180px 0' }}>
                     <div className="w-75 bg-secondary p-4 rounded-3">
                         <h1 className="text text-center">Registro Usuario</h1>
-                        <input className="form-control mb-3" type="text" id="name_user" name="name_user" placeholder="Nombre" required autoFocus value={this.state.name_user} onChange={this.handleChange.bind(this)} />
-                        <input className="form-control mb-3" type="password" name="password_user" id="password_user" placeholder="Contraseña" required value={this.state.password_user} onChange={this.handleChange.bind(this)} />
-                        <input className="form-control mb-3" type="email" id="email" name="email" placeholder="Correo Electronico" value={this.state.email} onChange={this.handleChange.bind(this)} />
+                        <input className="form-control mb-3" type="text" id="name" name="name" placeholder="Nombre" autoFocus value={this.state.name} onChange={this.handleChange} />
+                        <input className="form-control mb-3" type="password" name="password" id="password" placeholder="Contraseña" value={this.state.password} onChange={this.handleChange} />
+                        <input className="form-control mb-3" type="email" id="email" name="email" placeholder="Correo Electronico" value={this.state.email} onChange={this.handleChange} />
 
                         <button className="btn btn-warning w-100 mb-3" onClick={this.add.bind(this)}>Registrarse</button>
                         <Link className="btn btn-dark w-100" to="/login">Volver</Link>

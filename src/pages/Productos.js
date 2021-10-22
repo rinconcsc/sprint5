@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import {Link} from "react-router-dom"
 
 import Sala from "../assets/img/img_cards_productos/Sofa.png" 
 import Comedor from "../assets/img/img_cards_productos/Comedor.png"
@@ -26,7 +27,7 @@ class Productos extends React.Component {
                                 <img src={Sala} className="w-100" alt="Muebles para la sala"
                                     title="Muebles para la sala" />
                                 <h3><strong>Muebles para la sala</strong></h3>
-                                <a href="Salas.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/salas"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
 
                             <div className="col text-center bg-white p-5 m-5 border border-5 rounded-3 border-warning">

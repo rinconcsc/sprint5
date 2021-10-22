@@ -9,6 +9,7 @@ import Contactenos from "./pages/Contactenos";
 import Productos from "./pages/Productos";
 import Registro from "./pages/Registro";
 import Perfil from "./pages/Perfil";
+import Salas from "./pages/productos/Salas";
 
 
 class App extends React.Component {
@@ -21,8 +22,10 @@ class App extends React.Component {
           <Route path="/sobreNosotros" exact component={SobreNosotros}/>
           <Route path="/contactenos" exact component={Contactenos}/>
           <Route path="/productos" exact component={Productos}/>
+          <Route path="/productos/salas" exact component={Salas}/>
           <Route path="/registro" exact component={Registro}/>
           <Route path="/perfil" exact component={Perfil} />
+          <Route path="/perfil/:userId" exact component={Perfil} />
         </Switch>
       </Router>
     );

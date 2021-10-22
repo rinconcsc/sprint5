@@ -29,7 +29,7 @@ function Navbar(props) {
                                 <span className="visually-hidden"></span>
                             </button>
                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><Link className="dropdown-item" to="Salas.html">Salas</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/salas">Salas</Link></li>
                                 <li><Link className="dropdown-item" to="Comedores.html">Comedores</Link></li>
                                 <li><Link className="dropdown-item" to="Cocinas.html">Cocinas</Link></li>
                                 <li><Link className="dropdown-item" to="Baños.html">Baños</Link></li>
