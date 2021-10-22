@@ -72,32 +72,9 @@ class Perfil extends React.Component {
                                                         </button>
                                                     </td>
                                                     <td>
-                                                        <Link to={`${user.id}`} className="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#edit">
-                                                            <i className="bi bi-pencil-square"></i>
+                                                        <Link to={`/perfil/editar/${user.id}`} className="btn btn-warning btn-sm">
+                                                        <i class="bi bi-pencil-square"></i>
                                                         </Link>
-
-
-                                                        <div className="modal fade " id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
-                                                            <div className="modal-dialog modal-dialog-centered">
-                                                                <div className="modal-content bg">
-                                                                    <div className="modal-header">
-                                                                        <h5 className="modal-title text-dark" id="editLabel">Editar</h5>
-                                                                    </div>
-                                                                    <div className="modal-body">
-
-                                                                        <input className="form-control mb-3" type="text" id="name" name="name" placeholder="Nombre" autoFocus value={this.state} />
-                                                                        <input className="form-control mb-3" type="password" name="password" id="password" placeholder="Contraseña" />
-                                                                        <input className="form-control mb-3" type="email" id="email" name="email" placeholder="Correo Electronico" />
-
-                                                                    </div>
-                                                                    <div className="modal-footer">
-                                                                        <button className="btn btn-warning w-100 mb-3" >Editar</button>
-                                                                        <button type="button" className="btn btn-danger w-100" data-bs-dismiss="modal" aria-label="Volver">Cancelar</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
                                                     </td>
                                                 </tr>
                                         )

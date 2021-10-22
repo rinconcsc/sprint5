@@ -10,6 +10,7 @@ import Productos from "./pages/Productos";
 import Registro from "./pages/Registro";
 import Perfil from "./pages/Perfil";
 import Salas from "./pages/productos/Salas";
+import Editar from "./pages/Editar";
 
 
 class App extends React.Component {
@@ -25,7 +26,7 @@ class App extends React.Component {
           <Route path="/productos/salas" exact component={Salas}/>
           <Route path="/registro" exact component={Registro}/>
           <Route path="/perfil" exact component={Perfil} />
-          <Route path="/perfil/:userId" exact component={Perfil} />
+          <Route path="/perfil/editar/:userId" exact component={Editar} />
         </Switch>
       </Router>
     );
