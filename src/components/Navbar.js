@@ -30,13 +30,13 @@ function Navbar(props) {
                             </button>
                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li><Link className="dropdown-item" to="/productos/salas">Salas</Link></li>
-                                <li><Link className="dropdown-item" to="Comedores.html">Comedores</Link></li>
-                                <li><Link className="dropdown-item" to="Cocinas.html">Cocinas</Link></li>
-                                <li><Link className="dropdown-item" to="Baños.html">Baños</Link></li>
-                                <li><Link className="dropdown-item" to="Armarios.html">Armarios y gavetas</Link></li>
-                                <li><Link className="dropdown-item" to="Escritorios.html">Escritorios</Link></li>
-                                <li><Link className="dropdown-item" to="Cunas.html">Cunas</Link></li>
-                                <li><Link className="dropdown-item" to="Mas_muebles.html">otros</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/comedores">Comedores</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/cosinas">Cocinas</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/baños">Baños</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/armarios">Armarios y gavetas</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/escritorios">Escritorios</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/cunas">Cunas</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/masMuebles">otros</Link></li>
                             </ul>
 
                         </li>

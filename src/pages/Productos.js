@@ -33,7 +33,7 @@ class Productos extends React.Component {
                             <div className="col text-center bg-white p-5 m-5 border border-5 rounded-3 border-warning">
                                 <img src={Comedor} className="w-100" alt="Comedores" title="Comedores" />
                                 <h3><strong>Comedores</strong></h3>
-                                <a href="Comedores.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/comedores"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
                         </div>
 
@@ -41,13 +41,13 @@ class Productos extends React.Component {
                             <div className="col text-center bg-white p-3 m-5 border border-5 rounded-3 border-warning">
                                 <img src={Cocina} className="w-100" alt="Cocinas" title="Cocinas" />
                                 <h3><strong>Cocinas</strong></h3>
-                                <a href="Cocinas.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/cosinas"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
 
                             <div className="col text-center bg-white p-3 m-5 border border-5 rounded-3 border-warning">
                                 <img src={Baño} className="w-100" alt="Muebles para el baño" title="Muebles para el baño" />
                                 <h3><strong>Muebles para el baño</strong></h3>
-                                <a href="Baños.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/baños"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
                         </div>
 
@@ -55,12 +55,12 @@ class Productos extends React.Component {
                             <div className="col text-center bg-white p-3 m-5 border border-5 rounded-3 border-warning">
                                 <img src={Armario} className="w-100" alt="Armarios y Gavetas" title="Armarios y Gavetas" />
                                 <h3><strong>Armarios-Gavetas</strong></h3>
-                                <a href="Armarios.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/armarios"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
                             <div className="col text-center bg-white p-3 m-5 border border-5 rounded-3 border-warning">
                                 <img src={Escritorio} width="266.7px" alt="Escritorios" title="Escritorios" />
                                 <h3><strong>Escritorios</strong></h3>
-                                <a href="Escritorios.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/escritorios"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
                         </div>
 
@@ -68,12 +68,12 @@ class Productos extends React.Component {
                             <div className="col text-center bg-white p-3 m-5 border border-5 rounded-3 border-warning">
                                 <img src={Cuna} className="w-100" alt="Cunas" title="Cunas" />
                                 <h3><strong>Cunas</strong></h3>
-                                <a href="Cunas.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/cunas"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
                             <div className="col text-center bg-white p-3 m-5 border border-5 rounded-3 border-warning">
                                 <img src={Repisa} className="w-100" alt="Más muebles" title="Más muebles" />
                                 <h3><strong>Más muebles</strong></h3>
-                                <a href="Mas_muebles.html"><button className="btn btn-warning">Ver productos</button></a>
+                                <Link to="/productos/masMuebles"><button className="btn btn-warning">Ver productos</button></Link>
                             </div>
                         </div>
                     </div>

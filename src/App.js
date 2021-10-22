@@ -10,6 +10,13 @@ import Productos from "./pages/Productos";
 import Registro from "./pages/Registro";
 import Perfil from "./pages/Perfil";
 import Salas from "./pages/productos/Salas";
+import Comedores from "./pages/productos/Comedores";
+import Cocinas from "./pages/productos/Cocinas";
+import Baños from "./pages/productos/Baños";
+import Armarios from "./pages/productos/Armarios";
+import Escritorios from "./pages/productos/Escritorios";
+import Cunas from "./pages/productos/Cunas";
+import Mas_muebles from "./pages/productos/Mas_muebles";
 
 
 class App extends React.Component {
@@ -23,9 +30,17 @@ class App extends React.Component {
           <Route path="/contactenos" exact component={Contactenos}/>
           <Route path="/productos" exact component={Productos}/>
           <Route path="/productos/salas" exact component={Salas}/>
+          <Route path="/productos/comedores" exact component={Comedores}/>
+          <Route path="/productos/cosinas" exact component={Cocinas}/>
+          <Route path="/productos/baños" exact component={Baños}/>
+          <Route path="/productos/armarios" exact component={Armarios}/>
+          <Route path="/productos/escritorios" exact component={Escritorios}/>
+          <Route path="/productos/cunas" exact component={Cunas}/>
+          <Route path="/productos/masMuebles" exact component={Mas_muebles}/>
           <Route path="/registro" exact component={Registro}/>
           <Route path="/perfil" exact component={Perfil} />
           <Route path="/perfil/:userId" exact component={Perfil} />
+
         </Switch>
       </Router>
     );

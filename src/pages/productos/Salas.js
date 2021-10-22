@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import NavbarP from "../../components/NavbarP";
 
 import { Link } from "react-router-dom"
 
@@ -19,39 +20,8 @@ class Salas extends React.Component {
         return (
             <div>
                 <Navbar />
-                <div className="container-fluid w-100 mb-4" style={{ margin: '100px 0 180px 0' }}>
-                    <h1 className="text-center text-secondary">Bienvenido al catalogo de nuestros productos</h1><br />
-                    <div className="card text-center">
-                        <div className="card-header bg-secondary">
-                            <ul className="nav nav-tabs card-header-tabs">
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning active" aria-current="true" to="/">Salas</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning " to="/">Comedores</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning " to="/">Cocinas</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning " to="/">Armarios y Gavetas</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning " to="/">Escritorios</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning " to="/">Cunas</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning " to="/">Baños</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link text-warning " to="/">Otros</Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="card-body bg-secondary">
+                <NavbarP/>
+                <div className="card-body bg-secondary">
                         <h2 className="text-center p-3">Para una sala más viva</h2>
                         <div className="row row-cols-1 row-cols-md-4 g-3">
                             <div className="col">
@@ -142,7 +112,6 @@ class Salas extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
                 <Footer />
 
             </div>
