@@ -10,6 +10,7 @@ import Productos from "./pages/Productos";
 import Registro from "./pages/Registro";
 import Perfil from "./pages/Perfil";
 import Salas from "./pages/productos/Salas";
+
 import Comedores from "./pages/productos/Comedores";
 import Cocinas from "./pages/productos/Cocinas";
 import Baños from "./pages/productos/Baños";
@@ -17,6 +18,9 @@ import Armarios from "./pages/productos/Armarios";
 import Escritorios from "./pages/productos/Escritorios";
 import Cunas from "./pages/productos/Cunas";
 import Mas_muebles from "./pages/productos/Mas_muebles";
+
+import Editar from "./pages/Editar";
+
 
 
 class App extends React.Component {
@@ -39,8 +43,10 @@ class App extends React.Component {
           <Route path="/productos/masMuebles" exact component={Mas_muebles}/>
           <Route path="/registro" exact component={Registro}/>
           <Route path="/perfil" exact component={Perfil} />
-          <Route path="/perfil/:userId" exact component={Perfil} />
+ ramaProductos
 
+          <Route path="/perfil/editar/:userId" exact component={Editar} />
+ main
         </Switch>
       </Router>
     );
